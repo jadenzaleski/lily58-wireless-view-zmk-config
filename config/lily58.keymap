@@ -22,11 +22,11 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3            &kp N4    &kp N5                               &kp N6         &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
-&kp TAB    &kp Q   &kp W   &kp E             &kp R     &kp T                                &kp Y          &kp U   &kp I      &kp O    &kp P     &kp EQUAL
-&kp GLOBE  &kp A   &kp S   &kp D             &kp F     &kp G                                &kp H          &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z   &kp X   &kp C             &kp V     &kp B         &kp LBKT     &kp RBKT  &kp N          &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                           &kp LEFT_CONTROL  &kp LALT  &kp LEFT_GUI  &kp SPACE    &kp RET   &kp BACKSPACE  &mo 3   &kp RGUI
+&kp ESC    &kp N1  &kp N2  &kp N3            &kp N4    &kp N5                               &kp N6         &kp N7  &kp N8              &kp N9   &kp N0    &kp MINUS
+&kp TAB    &kp Q   &kp W   &kp E             &kp R     &kp T                                &kp Y          &kp U   &kp I               &kp O    &kp P     &kp EQUAL
+&kp GLOBE  &kp A   &kp S   &kp D             &kp F     &kp G                                &kp H          &kp J   &kp K               &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z   &kp X   &kp C             &kp V     &kp B         &kp LBKT     &kp RBKT  &kp N          &kp M   &kp COMMA           &kp DOT  &kp FSLH  &kp RSHFT
+                           &kp LEFT_CONTROL  &kp LALT  &kp LEFT_GUI  &kp SPACE    &kp RET   &kp BACKSPACE  &mo 3   &kp K_CONTEXT_MENU
             >;
         };
 
@@ -73,11 +73,11 @@
         custom_layer {
             display-name = "Lower";
             bindings = <
-&bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3     &bt BT_SEL 4                                                 &trans         &trans  &trans  &trans  &trans    &trans
-&kp GRAVE     &trans        &trans          &kp UP_ARROW    &trans           &trans                                                       &trans         &trans  &trans  &trans  &trans    &trans
-&kp CAPSLOCK  &trans        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans                                                       &trans         &trans  &trans  &trans  &trans    &trans
-&trans        &trans        &trans          &trans          &trans           &trans        &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &trans  &trans  &trans  &kp BSLH  &kp PIPE
-                                            &trans          &trans           &trans        &trans                  &trans                 &trans         &trans  &trans
+&trans        &trans    &trans          &kp PAGE_UP     &trans           &trans                                                  &kp C_PREV     &kp C_PP  &kp C_NEXT  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
+&kp GRAVE     &trans    &trans          &kp UP_ARROW    &trans           &trans                                                  &trans         &trans    &trans      &trans      &trans             &trans
+&kp CAPSLOCK  &kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END                                                 &trans         &trans    &trans      &trans      &trans             &trans
+&trans        &trans    &trans          &kp PAGE_DOWN   &trans           &trans   &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &trans    &trans      &trans      &kp BSLH           &kp PIPE
+                                        &trans          &trans           &trans   &trans                  &trans                 &trans         &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
