@@ -13,7 +13,7 @@
         wp: wp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp B &kp LS(K) &kp LS(C) &kp LS(E) &kp N9 &kp EXCL &kp H &kp A &kp N5 &kp P &kp V &kp LS(Z) &kp N6 &kp LS(Q) &kp J &kp N7>;
+            bindings = <&kp B &kp LS(K) &kp LS(C) &kp LS(E) &kp N9 &kp EXCL &kp H &kp A &kp N5 &kp P &kp V &kp LS(Z) &kp N6 &kp LS(Q) &kp J &kp N7>;
             label = "wp";
         };
     };
